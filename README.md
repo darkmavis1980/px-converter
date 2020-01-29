@@ -19,7 +19,7 @@ $ npm install -g px-converter
 $ px-converter COMMAND
 running command...
 $ px-converter (-v|--version|version)
-px-converter/0.1.1 darwin-x64 node-v13.3.0
+px-converter/0.2.0 darwin-x64 node-v13.3.0
 $ px-converter --help [COMMAND]
 USAGE
   $ px-converter COMMAND
@@ -31,6 +31,7 @@ USAGE
 * [`px-converter from:pt [POINT]`](#px-converter-frompt-point)
 * [`px-converter from:rem [REM]`](#px-converter-fromrem-rem)
 * [`px-converter help [COMMAND]`](#px-converter-help-command)
+* [`px-converter table:pt`](#px-converter-tablept)
 * [`px-converter table:rem [BASEPIXEL]`](#px-converter-tablerem-basepixel)
 * [`px-converter to:pt [PIXEL]`](#px-converter-topt-pixel)
 * [`px-converter to:rem [PIXEL]`](#px-converter-torem-pixel)
@@ -54,7 +55,7 @@ EXAMPLE
   16px
 ```
 
-_See code: [src/commands/from/pt.ts](https://github.com/experimental/px-converter/blob/v0.1.1/src/commands/from/pt.ts)_
+_See code: [src/commands/from/pt.ts](https://github.com/experimental/px-converter/blob/v0.2.0/src/commands/from/pt.ts)_
 
 ## `px-converter from:rem [REM]`
 
@@ -69,7 +70,6 @@ ARGUMENTS
 
 OPTIONS
   -b, --base=base  [default: 16] Base pixel
-  -f, --force
   -h, --help       show CLI help
 
 EXAMPLE
@@ -77,7 +77,7 @@ EXAMPLE
   32px
 ```
 
-_See code: [src/commands/from/rem.ts](https://github.com/experimental/px-converter/blob/v0.1.1/src/commands/from/rem.ts)_
+_See code: [src/commands/from/rem.ts](https://github.com/experimental/px-converter/blob/v0.2.0/src/commands/from/rem.ts)_
 
 ## `px-converter help [COMMAND]`
 
@@ -96,6 +96,29 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.3/src/commands/help.ts)_
 
+## `px-converter table:pt`
+
+Return a table of conversions between pixels and points
+
+```
+USAGE
+  $ px-converter table:pt
+
+OPTIONS
+  -h, --help         show CLI help
+  -r, --range=range  [default: 10,42] Range of pixels
+
+EXAMPLE
+  $ px-converter table:pt
+  Pixel     Point
+  10px      7.5pt
+  11px      8.25pt
+  12px      9pt
+  ...
+```
+
+_See code: [src/commands/table/pt.ts](https://github.com/experimental/px-converter/blob/v0.2.0/src/commands/table/pt.ts)_
+
 ## `px-converter table:rem [BASEPIXEL]`
 
 Return a table of conversions between pixels and rems, if no BASEPIXEL value is passed, it will default to 16 pixels
@@ -108,7 +131,7 @@ ARGUMENTS
   BASEPIXEL  Base Pixel
 
 OPTIONS
-  -f, --force
+  -b, --base=base    [default: 16] Base pixel
   -h, --help         show CLI help
   -r, --range=range  [default: 10,42] Range of pixels
 
@@ -121,7 +144,7 @@ EXAMPLE
   ...
 ```
 
-_See code: [src/commands/table/rem.ts](https://github.com/experimental/px-converter/blob/v0.1.1/src/commands/table/rem.ts)_
+_See code: [src/commands/table/rem.ts](https://github.com/experimental/px-converter/blob/v0.2.0/src/commands/table/rem.ts)_
 
 ## `px-converter to:pt [PIXEL]`
 
@@ -142,7 +165,7 @@ EXAMPLE
   12pt
 ```
 
-_See code: [src/commands/to/pt.ts](https://github.com/experimental/px-converter/blob/v0.1.1/src/commands/to/pt.ts)_
+_See code: [src/commands/to/pt.ts](https://github.com/experimental/px-converter/blob/v0.2.0/src/commands/to/pt.ts)_
 
 ## `px-converter to:rem [PIXEL]`
 
@@ -157,7 +180,6 @@ ARGUMENTS
 
 OPTIONS
   -b, --base=base  [default: 16] Base pixel
-  -f, --force
   -h, --help       show CLI help
 
 EXAMPLE
@@ -165,5 +187,5 @@ EXAMPLE
   1rem
 ```
 
-_See code: [src/commands/to/rem.ts](https://github.com/experimental/px-converter/blob/v0.1.1/src/commands/to/rem.ts)_
+_See code: [src/commands/to/rem.ts](https://github.com/experimental/px-converter/blob/v0.2.0/src/commands/to/rem.ts)_
 <!-- commandsstop -->
