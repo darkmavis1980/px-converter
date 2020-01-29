@@ -7,6 +7,7 @@ px-converter
 [![Version](https://img.shields.io/npm/v/px-converter.svg)](https://npmjs.org/package/px-converter)
 [![Downloads/week](https://img.shields.io/npm/dw/px-converter.svg)](https://npmjs.org/package/px-converter)
 [![License](https://img.shields.io/npm/l/px-converter.svg)](https://github.com/experimental/px-converter/blob/master/package.json)
+[![Build Status](https://travis-ci.org/darkmavis1980/px-converter.svg?branch=master)](https://travis-ci.org/darkmavis1980/px-converter)
 
 <!-- toc -->
 * [Usage](#usage)
