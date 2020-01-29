@@ -18,6 +18,7 @@ Pixel     Rem
 
   static flags = {
     help: flags.help({char: 'h'}),
+    base: flags.integer({char: 'b', description: 'Base pixel', default: DEFAULT_BASEFONT}),
     // flag with a value (-r, --range=MIN,MAX)
     range: flags.string({char: 'r', description: 'Range of pixels', default: DEFAULT_RANGE.toString()}),
   }
@@ -25,11 +26,11 @@ Pixel     Rem
   static args = [{name: 'basepixel', description: 'Base Pixel'}]
 
   async run() {
-    const {args, flags} = this.parse(TableRem)
-    const basepixel = args.basepixel || DEFAULT_BASEFONT
+    const {flags} = this.parse(TableRem)
+    const basepixel = flags.base || DEFAULT_BASEFONT
     const range: number[]|string[] = flags.range ? flags.range.split(',').map(i => Number(i)) : DEFAULT_RANGE
 
-    cli.table(generateRemTable(basepixel, range), {
+    cli.table(generateRemTable(range, basepixel), {
       px: {
         header: 'Pixel',
         minWidth: 10,

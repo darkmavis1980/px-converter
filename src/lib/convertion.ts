@@ -4,13 +4,7 @@ import {
   DEFAULT_RANGE,
   DEFAULT_PT_CONVERSION,
 } from '../constants'
-
-type ITableRow = {
-  px: string;
-  rem: string;
-}
-
-type TTable = Array<ITableRow>
+import {TTable} from './interfaces/types'
 
 export function pxToPt(pixel: number): number {
   return Math.round((pixel * DEFAULT_PT_CONVERSION) * DEFAULT_PRECISION) / DEFAULT_PRECISION
@@ -28,7 +22,7 @@ export function remToPx(rem: number, base: number = DEFAULT_BASEFONT): number {
   return Math.round((rem * base) * DEFAULT_PRECISION) / DEFAULT_PRECISION
 }
 
-export function generateRemTable(base: number = DEFAULT_BASEFONT, range: number[] = DEFAULT_RANGE): TTable {
+export function generateRemTable(range: number[] = DEFAULT_RANGE, base: number = DEFAULT_BASEFONT): TTable {
   const table: TTable = []
 
   for (let i: number = range[0]; i <= range[1]; i++) {
