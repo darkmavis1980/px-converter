@@ -37,7 +37,7 @@ USAGE
 
 ## `px-converter from:pt [POINT]`
 
-describe the command here
+Convert a given point (pt) value to the corresponding pixel value
 
 ```
 USAGE
@@ -74,7 +74,7 @@ OPTIONS
 
 EXAMPLE
   $ px-converter from:rem 2
-  32 px
+  32px
 ```
 
 _See code: [src/commands/from/rem.ts](https://github.com/experimental/px-converter/blob/v0.1.0/src/commands/from/rem.ts)_
@@ -98,7 +98,7 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.3
 
 ## `px-converter table:rem [BASEPIXEL]`
 
-describe the command here
+Return a table of conversions between pixels and rems, if no BASEPIXEL value is passed, it will default to 16 pixels
 
 ```
 USAGE
@@ -125,7 +125,7 @@ _See code: [src/commands/table/rem.ts](https://github.com/experimental/px-conver
 
 ## `px-converter to:pt [PIXEL]`
 
-describe the command here
+Convert a given pixel value to the corresponding point value
 
 ```
 USAGE
@@ -138,15 +138,15 @@ OPTIONS
   -h, --help  show CLI help
 
 EXAMPLE
-  $ px-converter to:rem 16
-  1rem
+  $ px-converter to:pt 16
+  12pt
 ```
 
 _See code: [src/commands/to/pt.ts](https://github.com/experimental/px-converter/blob/v0.1.0/src/commands/to/pt.ts)_
 
 ## `px-converter to:rem [PIXEL]`
 
-describe the command here
+Convert a given pixel value to the corresponding rem value
 
 ```
 USAGE
