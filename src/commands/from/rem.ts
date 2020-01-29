@@ -15,8 +15,6 @@ export default class ToRem extends Command {
     help: flags.help({char: 'h'}),
     // flag with a value (-r, --range=MIN,MAX)
     base: flags.integer({char: 'b', description: 'Base pixel', default: DEFAULT_BASEFONT}),
-    // flag with no value (-f, --force)
-    force: flags.boolean({char: 'f'}),
   }
 
   static args = [{name: 'rem', description: 'Rem to convert'}]
