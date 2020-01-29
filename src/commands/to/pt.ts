@@ -3,11 +3,11 @@ import {pxToPt} from '../../lib/convertion'
 import {DEFAULT_BASEFONT} from '../../constants'
 
 export default class ToPt extends Command {
-  static description = 'describe the command here'
+  static description = 'Convert a given pixel value to the corresponding point value'
 
   static examples = [
-    `$ px-converter to:rem 16
-1rem
+    `$ px-converter to:pt 16
+12pt
 `,
   ]
 
@@ -22,6 +22,6 @@ export default class ToPt extends Command {
 
     const pixel: number = args.pixel ? Number(args.pixel) : DEFAULT_BASEFONT
     const convertion: number = pxToPt(pixel)
-    this.log(`${convertion} pt`)
+    this.log(`${convertion}pt`)
   }
 }

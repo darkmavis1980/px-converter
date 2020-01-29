@@ -3,7 +3,7 @@ import {pxToRem} from '../../lib/convertion'
 import {DEFAULT_BASEFONT} from '../../constants'
 
 export default class ToRem extends Command {
-  static description = 'describe the command here'
+  static description = 'Convert a given pixel value to the corresponding rem value'
 
   static examples = [
     `$ px-converter to:rem 16
@@ -27,6 +27,6 @@ export default class ToRem extends Command {
     const pixel: number = args.pixel ? Number(args.pixel) : DEFAULT_BASEFONT
     const base: number = flags.base ? Number(flags.base) : DEFAULT_BASEFONT
     const convertion: number = pxToRem(pixel, base)
-    this.log(`${convertion} rem`)
+    this.log(`${convertion}rem`)
   }
 }

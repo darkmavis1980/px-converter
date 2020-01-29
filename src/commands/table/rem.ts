@@ -4,7 +4,7 @@ import {generateTable} from '../../lib/convertion'
 import {DEFAULT_RANGE, DEFAULT_BASEFONT} from '../../constants'
 
 export default class TableRem extends Command {
-  static description = 'describe the command here'
+  static description = `Return a table of conversions between pixels and rems, if no BASEPIXEL value is passed, it will default to ${DEFAULT_BASEFONT} pixels`
 
   static examples = [
     `$ px-converter table:rem

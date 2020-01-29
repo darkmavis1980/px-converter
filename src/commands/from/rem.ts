@@ -7,7 +7,7 @@ export default class ToRem extends Command {
 
   static examples = [
     `$ px-converter from:rem 2
-32 px
+32px
 `,
   ]
 
@@ -27,6 +27,6 @@ export default class ToRem extends Command {
     const rem: number = args.rem ? Number(args.rem) : DEFAULT_BASEFONT
     const base: number = flags.base ? Number(flags.base) : DEFAULT_BASEFONT
     const convertion: number = remToPx(rem, base)
-    this.log(`${convertion} px`)
+    this.log(`${convertion}px`)
   }
 }
