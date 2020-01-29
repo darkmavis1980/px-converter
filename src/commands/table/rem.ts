@@ -1,6 +1,6 @@
 import {Command, flags} from '@oclif/command'
 import {cli} from 'cli-ux'
-import {generateTable} from '../../lib/convertion'
+import {generateRemTable} from '../../lib/convertion'
 import {DEFAULT_RANGE, DEFAULT_BASEFONT} from '../../constants'
 
 export default class TableRem extends Command {
@@ -18,20 +18,19 @@ Pixel     Rem
 
   static flags = {
     help: flags.help({char: 'h'}),
+    base: flags.integer({char: 'b', description: 'Base pixel', default: DEFAULT_BASEFONT}),
     // flag with a value (-r, --range=MIN,MAX)
     range: flags.string({char: 'r', description: 'Range of pixels', default: DEFAULT_RANGE.toString()}),
-    // flag with no value (-f, --force)
-    force: flags.boolean({char: 'f'}),
   }
 
   static args = [{name: 'basepixel', description: 'Base Pixel'}]
 
   async run() {
-    const {args, flags} = this.parse(TableRem)
-    const basepixel = args.basepixel || DEFAULT_BASEFONT
+    const {flags} = this.parse(TableRem)
+    const basepixel = flags.base || DEFAULT_BASEFONT
     const range: number[]|string[] = flags.range ? flags.range.split(',').map(i => Number(i)) : DEFAULT_RANGE
 
-    cli.table(generateTable(basepixel, range), {
+    cli.table(generateRemTable(range, basepixel), {
       px: {
         header: 'Pixel',
         minWidth: 10,

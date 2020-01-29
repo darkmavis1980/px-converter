@@ -13,10 +13,7 @@ export default class ToRem extends Command {
 
   static flags = {
     help: flags.help({char: 'h'}),
-    // flag with a value (-r, --range=MIN,MAX)
     base: flags.integer({char: 'b', description: 'Base pixel', default: DEFAULT_BASEFONT}),
-    // flag with no value (-f, --force)
-    force: flags.boolean({char: 'f'}),
   }
 
   static args = [{name: 'pixel', description: 'Pixel to convert'}]
