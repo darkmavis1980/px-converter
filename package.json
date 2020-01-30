@@ -1,11 +1,11 @@
 {
   "name": "px-converter",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Alessio Michelini",
   "bin": {
     "px-converter": "./bin/run"
   },
-  "bugs": "https://github.com/experimental/px-converter/issues",
+  "bugs": "https://github.com/darkmavis1980/px-converterissues",
   "dependencies": {
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.13.3",
@@ -16,16 +16,16 @@
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.2",
     "@oclif/test": "^1.2.5",
-    "@types/chai": "^4.2.7",
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^10.17.14",
+    "@types/chai": "^4.2.8",
+    "@types/mocha": "^7.0.1",
+    "@types/node": "^13.5.2",
     "chai": "^4.2.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.8.0",
     "eslint-config-oclif": "^3.1.0",
     "eslint-config-oclif-typescript": "^0.1.0",
-    "globby": "^10.0.2",
-    "mocha": "^5.2.0",
-    "nyc": "^14.1.1",
+    "globby": "^11.0.0",
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
   },
@@ -38,7 +38,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/experimental/px-converter",
+  "homepage": "https://github.com/darkmavis1980/px-converter",
   "keywords": [
     "oclif"
   ],
@@ -51,7 +51,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "experimental/px-converter",
+  "repository": "darkmavis1980/px-converter",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
