@@ -1,6 +1,6 @@
 {
   "name": "px-converter",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "Alessio Michelini",
   "bin": {
     "px-converter": "./bin/run"
@@ -8,7 +8,7 @@
   "bugs": "https://github.com/darkmavis1980/px-converterissues",
   "dependencies": {
     "@oclif/command": "^1.5.19",
-    "@oclif/config": "^1.13.3",
+    "@oclif/config": "^1.14.0",
     "@oclif/plugin-help": "^2.2.3",
     "cli-ux": "^5.4.4",
     "tslib": "^1.10.0"
