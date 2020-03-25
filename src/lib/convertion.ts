@@ -41,3 +41,17 @@ export function generatePtTable(range: number[] = DEFAULT_RANGE): TTable {
   }
   return table
 }
+
+export function hexToRgb(hex = '000000'): number[] {
+  if (!hex || hex === null) {
+    throw new Error('Hex value cannot be null')
+  }
+  if (hex.indexOf('#') !== -1) {
+    hex = hex.substr(1)
+  }
+  const rgb = hex.match(hex.length === 6 ? /.{2}/g : /.{1}/g).map(color => {
+    color = hex.length === 3 ? color + color : color
+    return parseInt(color, 16)
+  })
+  return rgb
+}
