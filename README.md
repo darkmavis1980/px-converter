@@ -20,7 +20,7 @@ $ npm install -g px-converter
 $ px-converter COMMAND
 running command...
 $ px-converter (-v|--version|version)
-px-converter/0.2.3 darwin-x64 node-v13.8.0
+px-converter/0.2.5 darwin-x64 node-v13.10.1
 $ px-converter --help [COMMAND]
 USAGE
   $ px-converter COMMAND
@@ -56,7 +56,7 @@ EXAMPLE
   16px
 ```
 
-_See code: [src/commands/from/pt.ts](https://github.com/darkmavis1980/px-converter/blob/v0.2.3/src/commands/from/pt.ts)_
+_See code: [src/commands/from/pt.ts](https://github.com/darkmavis1980/px-converter/blob/v0.2.5/src/commands/from/pt.ts)_
 
 ## `px-converter from:rem [REM]`
 
@@ -78,7 +78,7 @@ EXAMPLE
   32px
 ```
 
-_See code: [src/commands/from/rem.ts](https://github.com/darkmavis1980/px-converter/blob/v0.2.3/src/commands/from/rem.ts)_
+_See code: [src/commands/from/rem.ts](https://github.com/darkmavis1980/px-converter/blob/v0.2.5/src/commands/from/rem.ts)_
 
 ## `px-converter help [COMMAND]`
 
@@ -118,7 +118,7 @@ EXAMPLE
   ...
 ```
 
-_See code: [src/commands/table/pt.ts](https://github.com/darkmavis1980/px-converter/blob/v0.2.3/src/commands/table/pt.ts)_
+_See code: [src/commands/table/pt.ts](https://github.com/darkmavis1980/px-converter/blob/v0.2.5/src/commands/table/pt.ts)_
 
 ## `px-converter table:rem [BASEPIXEL]`
 
@@ -145,7 +145,7 @@ EXAMPLE
   ...
 ```
 
-_See code: [src/commands/table/rem.ts](https://github.com/darkmavis1980/px-converter/blob/v0.2.3/src/commands/table/rem.ts)_
+_See code: [src/commands/table/rem.ts](https://github.com/darkmavis1980/px-converter/blob/v0.2.5/src/commands/table/rem.ts)_
 
 ## `px-converter to:pt [PIXEL]`
 
@@ -166,7 +166,7 @@ EXAMPLE
   12pt
 ```
 
-_See code: [src/commands/to/pt.ts](https://github.com/darkmavis1980/px-converter/blob/v0.2.3/src/commands/to/pt.ts)_
+_See code: [src/commands/to/pt.ts](https://github.com/darkmavis1980/px-converter/blob/v0.2.5/src/commands/to/pt.ts)_
 
 ## `px-converter to:rem [PIXEL]`
 
@@ -188,5 +188,5 @@ EXAMPLE
   1rem
 ```
 
-_See code: [src/commands/to/rem.ts](https://github.com/darkmavis1980/px-converter/blob/v0.2.3/src/commands/to/rem.ts)_
+_See code: [src/commands/to/rem.ts](https://github.com/darkmavis1980/px-converter/blob/v0.2.5/src/commands/to/rem.ts)_
 <!-- commandsstop -->
