@@ -1,6 +1,6 @@
 {
   "name": "px-converter",
-  "version": "0.2.19",
+  "version": "0.2.20",
   "author": "Alessio Michelini",
   "bin": {
     "px-converter": "./bin/run"
@@ -19,6 +19,7 @@
     "@types/chai": "^4.2.14",
     "@types/mocha": "^8.2.0",
     "@types/node": "^14.14.12",
+    "auto-changelog": "^2.2.1",
     "chai": "^4.2.0",
     "eslint": "^7.15.0",
     "eslint-config-oclif": "^3.1.0",
@@ -57,7 +58,19 @@
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
-    "version": "oclif-dev readme && git add README.md"
+    "changelog": "auto-changelog",
+    "version": "oclif-dev readme && git add README.md",
+    "eslint": "eslint . --ext .ts"
   },
-  "types": "lib/index.d.ts"
+  "types": "lib/index.d.ts",
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "changelog.tpl.hbs",
+    "unreleased": true,
+    "commitLimit": 10,
+    "includeBranch": [
+      "master",
+      "dev"
+    ]
+  }
 }
