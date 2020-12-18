@@ -1,10 +1,18 @@
 # Changelog
 
-## [Unreleased](https://github.com/darkmavis1980/px-converter/compare/v0.2.19...HEAD)
+## [Unreleased](https://github.com/darkmavis1980/px-converter/compare/v0.2.20...HEAD)
+
+## [v0.2.20](https://github.com/darkmavis1980/px-converter/compare/v0.2.19...v0.2.20) - 2020-12-18
+
+### Merged
+
+- Added main.yml [`#6`](https://github.com/darkmavis1980/px-converter/pull/6)
 
 ### Commits
 
-- Added main.yml [`2bab6ec`](https://github.com/darkmavis1980/px-converter/commit/2bab6ecac01549309bae072689e84dd0ed5d093b)
+- Added autochangelog [`5daaf24`](https://github.com/darkmavis1980/px-converter/commit/5daaf2409880195f88f60b150c3b5fed5802b4ac)
+- Updated dependencies to latest version [`d60080a`](https://github.com/darkmavis1980/px-converter/commit/d60080a4c07b791dcc886cc5019cbd95d5a932e7)
+- Updated readme [`4a39ab4`](https://github.com/darkmavis1980/px-converter/commit/4a39ab4cbc254f144646453d6c8d069c4a6ea200)
 
 ## [v0.2.19](https://github.com/darkmavis1980/px-converter/compare/v0.2.18...v0.2.19) - 2020-12-11
 
