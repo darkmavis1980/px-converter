@@ -17,7 +17,7 @@ export default class ToPt extends Command {
 
   static args = [{name: 'pixel', description: 'Pixel to convert'}]
 
-  async run() {
+  async run(): Promise<void> {
     const {args} = this.parse(ToPt)
 
     const pixel: number = args.pixel ? Number(args.pixel) : DEFAULT_BASEFONT

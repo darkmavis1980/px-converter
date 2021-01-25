@@ -25,7 +25,7 @@ Pixel     Rem
 
   static args = [{name: 'basepixel', description: 'Base Pixel'}]
 
-  async run() {
+  async run(): Promise<void> {
     const {flags} = this.parse(TableRem)
     const basepixel = flags.base || DEFAULT_BASEFONT
     const range: number[]|string[] = flags.range ? flags.range.split(',').map(i => Number(i)) : DEFAULT_RANGE

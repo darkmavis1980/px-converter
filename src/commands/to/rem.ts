@@ -18,7 +18,7 @@ export default class ToRem extends Command {
 
   static args = [{name: 'pixel', description: 'Pixel to convert'}]
 
-  async run() {
+  async run(): Promise<void> {
     const {args, flags} = this.parse(ToRem)
 
     const pixel: number = args.pixel ? Number(args.pixel) : DEFAULT_BASEFONT

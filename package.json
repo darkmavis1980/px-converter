@@ -1,6 +1,6 @@
 {
   "name": "px-converter",
-  "version": "0.2.22",
+  "version": "0.2.23",
   "author": "Alessio Michelini",
   "bin": {
     "px-converter": "./bin/run"
@@ -19,6 +19,7 @@
     "@types/chai": "^4.2.14",
     "@types/mocha": "^8.2.0",
     "@types/node": "^14.14.22",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
     "auto-changelog": "^2.2.1",
     "chai": "^4.2.0",
     "eslint": "^7.18.0",

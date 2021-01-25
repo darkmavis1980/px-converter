@@ -18,7 +18,7 @@ export default class ToRem extends Command {
 
   static args = [{name: 'rem', description: 'Rem to convert'}]
 
-  async run() {
+  async run(): Promise<void> {
     const {args, flags} = this.parse(ToRem)
 
     const rem: number = args.rem ? Number(args.rem) : DEFAULT_BASEFONT

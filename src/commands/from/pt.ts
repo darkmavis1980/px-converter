@@ -17,7 +17,7 @@ export default class FromPt extends Command {
 
   static args = [{name: 'point', description: 'Point to convert'}]
 
-  async run() {
+  async run(): Promise<void> {
     const {args} = this.parse(FromPt)
 
     const point: number = args.point ? Number(args.point) : DEFAULT_BASEFONT

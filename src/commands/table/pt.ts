@@ -22,7 +22,7 @@ Pixel     Point
     range: flags.string({char: 'r', description: 'Range of pixels', default: DEFAULT_RANGE.toString()}),
   }
 
-  async run() {
+  async run(): Promise<void> {
     const {flags} = this.parse(TablePt)
     const range: number[]|string[] = flags.range ? flags.range.split(',').map(i => Number(i)) : DEFAULT_RANGE
 
