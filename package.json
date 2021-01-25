@@ -1,6 +1,6 @@
 {
   "name": "px-converter",
-  "version": "0.2.21",
+  "version": "0.2.22",
   "author": "Alessio Michelini",
   "bin": {
     "px-converter": "./bin/run"
@@ -11,20 +11,20 @@
     "@oclif/config": "^1.17.0",
     "@oclif/plugin-help": "^3.2.1",
     "cli-ux": "^5.5.1",
-    "tslib": "^2.0.3"
+    "tslib": "^2.1.0"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.26.0",
     "@oclif/test": "^1.2.8",
     "@types/chai": "^4.2.14",
     "@types/mocha": "^8.2.0",
-    "@types/node": "^14.14.16",
+    "@types/node": "^14.14.22",
     "auto-changelog": "^2.2.1",
     "chai": "^4.2.0",
-    "eslint": "^7.16.0",
+    "eslint": "^7.18.0",
     "eslint-config-oclif": "^3.1.0",
     "eslint-config-oclif-typescript": "^0.2.0",
-    "globby": "^11.0.1",
+    "globby": "^11.0.2",
     "mocha": "^8.2.1",
     "nyc": "^15.1.0",
     "ts-node": "^9.1.1",
