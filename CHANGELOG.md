@@ -1,6 +1,33 @@
 # Changelog
 
-## [Unreleased](https://github.com/darkmavis1980/px-converter/compare/v0.2.20...HEAD)
+## [Unreleased](https://github.com/darkmavis1980/px-converter/compare/v0.2.23...HEAD)
+
+### Commits
+
+- Added potential energy calculator [`2607cfa`](https://github.com/darkmavis1980/px-converter/commit/2607cfaa1dcf01430530246be0bc379147bb7d3f)
+- Added workflow for PR [`c1b9d4a`](https://github.com/darkmavis1980/px-converter/commit/c1b9d4a6e5939a37e0e92dbba722b7431019bc1f)
+
+## [v0.2.23](https://github.com/darkmavis1980/px-converter/compare/v0.2.22...v0.2.23) - 2021-01-25
+
+### Commits
+
+- Fixed issue with eslint [`aa82c75`](https://github.com/darkmavis1980/px-converter/commit/aa82c75f0d3a5549820d2aedc94458a4335fa29b)
+
+## [v0.2.22](https://github.com/darkmavis1980/px-converter/compare/v0.2.21...v0.2.22) - 2021-01-25
+
+### Commits
+
+- Updated dependencies [`6287522`](https://github.com/darkmavis1980/px-converter/commit/6287522beaf7b3f7c25dd16ef534e1ec826c34f5)
+
+## [v0.2.21](https://github.com/darkmavis1980/px-converter/compare/v0.2.20...v0.2.21) - 2020-12-27
+
+### Merged
+
+- Added github actions to publish to npm [`#7`](https://github.com/darkmavis1980/px-converter/pull/7)
+
+### Commits
+
+- Updated changelog and readme [`4eb2178`](https://github.com/darkmavis1980/px-converter/commit/4eb217843f8a414e8166757e38e98a719cb2a3d7)
 
 ## [v0.2.20](https://github.com/darkmavis1980/px-converter/compare/v0.2.19...v0.2.20) - 2020-12-18
 
