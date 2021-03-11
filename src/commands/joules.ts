@@ -17,8 +17,6 @@ An object with mass of 0.249Kg from an height of 50 meters, will generate 122.09
     help: flags.help({char: 'h'}),
   }
 
-  static args = [{name: 'pixel', description: 'Pixel to convert'}]
-
   async run(): Promise<void> {
     const {mass, height} = await inquirer.prompt([
       {
