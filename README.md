@@ -20,7 +20,7 @@ $ npm install -g px-converter
 $ px-converter COMMAND
 running command...
 $ px-converter (-v|--version|version)
-px-converter/0.3.0 darwin-x64 node-v14.15.3
+px-converter/0.3.4 darwin-arm64 node-v16.14.0
 $ px-converter --help [COMMAND]
 USAGE
   $ px-converter COMMAND
@@ -57,7 +57,7 @@ EXAMPLE
   16px
 ```
 
-_See code: [src/commands/from/pt.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.0/src/commands/from/pt.ts)_
+_See code: [src/commands/from/pt.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.4/src/commands/from/pt.ts)_
 
 ## `px-converter from:rem [REM]`
 
@@ -79,7 +79,7 @@ EXAMPLE
   32px
 ```
 
-_See code: [src/commands/from/rem.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.0/src/commands/from/rem.ts)_
+_See code: [src/commands/from/rem.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.4/src/commands/from/rem.ts)_
 
 ## `px-converter help [COMMAND]`
 
@@ -96,7 +96,7 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.18/src/commands/help.ts)_
 
 ## `px-converter joules`
 
@@ -116,7 +116,7 @@ EXAMPLE
   An object with mass of 0.249Kg from an height of 50 meters, will generate 122.0928 Joules
 ```
 
-_See code: [src/commands/joules.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.0/src/commands/joules.ts)_
+_See code: [src/commands/joules.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.4/src/commands/joules.ts)_
 
 ## `px-converter table:pt`
 
@@ -139,7 +139,7 @@ EXAMPLE
   ...
 ```
 
-_See code: [src/commands/table/pt.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.0/src/commands/table/pt.ts)_
+_See code: [src/commands/table/pt.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.4/src/commands/table/pt.ts)_
 
 ## `px-converter table:rem [BASEPIXEL]`
 
@@ -166,7 +166,7 @@ EXAMPLE
   ...
 ```
 
-_See code: [src/commands/table/rem.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.0/src/commands/table/rem.ts)_
+_See code: [src/commands/table/rem.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.4/src/commands/table/rem.ts)_
 
 ## `px-converter to:pt [PIXEL]`
 
@@ -187,7 +187,7 @@ EXAMPLE
   12pt
 ```
 
-_See code: [src/commands/to/pt.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.0/src/commands/to/pt.ts)_
+_See code: [src/commands/to/pt.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.4/src/commands/to/pt.ts)_
 
 ## `px-converter to:rem [PIXEL]`
 
@@ -209,5 +209,5 @@ EXAMPLE
   1rem
 ```
 
-_See code: [src/commands/to/rem.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.0/src/commands/to/rem.ts)_
+_See code: [src/commands/to/rem.ts](https://github.com/darkmavis1980/px-converter/blob/v0.3.4/src/commands/to/rem.ts)_
 <!-- commandsstop -->
