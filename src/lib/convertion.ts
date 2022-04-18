@@ -29,6 +29,7 @@ export function generateRemTable(range: number[] = DEFAULT_RANGE, base: number =
     const rem: number = pxToRem(i, base)
     table.push({px: `${i}px`, rem: `${rem}rem`})
   }
+
   return table
 }
 
@@ -39,5 +40,6 @@ export function generatePtTable(range: number[] = DEFAULT_RANGE): TTable {
     const rem: number = pxToPt(i)
     table.push({px: `${i}px`, rem: `${rem}pt`})
   }
+
   return table
 }
