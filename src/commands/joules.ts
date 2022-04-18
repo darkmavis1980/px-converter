@@ -27,6 +27,7 @@ An object with mass of 0.249Kg from an height of 50 meters, will generate 122.09
           if (!Number.isNaN(Number(mass))) {
             return 'Please enter a valid number'
           }
+
           return true
         },
       },
@@ -38,6 +39,7 @@ An object with mass of 0.249Kg from an height of 50 meters, will generate 122.09
           if (!Number.isNaN(Number(height))) {
             return 'Please enter a valid number'
           }
+
           return true
         },
       },

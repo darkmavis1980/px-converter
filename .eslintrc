@@ -2,5 +2,9 @@
   "extends": [
     "oclif",
     "oclif-typescript"
-  ]
+  ],
+  "rules": {
+    "unicorn/numeric-separators-style": "off",
+    "unicorn/prefer-native-coercion-functions": "off"
+  }
 }
