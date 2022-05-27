@@ -35,6 +35,6 @@ jobs:
       - run: npm install
       - run: npm test
       - run: npm run eslint
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
+      # - uses: JS-DevTools/npm-publish@v1
+      #   with:
+      #     token: ${{ secrets.NPM_TOKEN }}
