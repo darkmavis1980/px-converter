@@ -27,7 +27,7 @@ jobs:
       - name: Run unit tests
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
-      - run: npm ci
+          node-version: 16
+      - run: npm install
       - run: npm test
       - run: npm run eslint
