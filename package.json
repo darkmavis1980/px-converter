@@ -1,6 +1,6 @@
 {
   "name": "px-converter",
-  "version": "0.3.8",
+  "version": "0.4.0",
   "author": "Alessio Michelini",
   "bin": {
     "px-converter": "./bin/run"
