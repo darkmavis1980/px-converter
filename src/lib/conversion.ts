@@ -43,3 +43,33 @@ export function generatePtTable(range: number[] = DEFAULT_RANGE): TTable {
 
   return table
 }
+
+/**
+ * Converts an Hex value to RGB
+ * @param hex The Hex value to convert to RGB
+ * @returns An array of numbers with exactly 3 elements
+ */
+export function hexToRgb(hex = '000000'): number[] {
+  if (!hex || !(hex.length === 6 || hex.length === 3) || hex === null) {
+    throw new Error('Hex value cannot be null')
+  }
+
+  if (hex.includes('#')) {
+    hex = hex.slice(1)
+  }
+
+  if (!hex || hex === null) {
+    return [0, 0, 0]
+  }
+
+  const colors = hex.match(hex.length === 6 ? /.{2}/g : /./g)
+  if (!colors || colors === null) {
+    throw new Error('Cannot resolve the colours')
+  }
+
+  const rgb = colors.map(color => {
+    color = hex.length === 3 ? color + color : color
+    return Number.parseInt(color, 16)
+  })
+  return rgb
+}
