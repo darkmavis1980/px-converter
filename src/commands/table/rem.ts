@@ -1,6 +1,6 @@
 import {Command, flags} from '@oclif/command'
 import {cli} from 'cli-ux'
-import {generateRemTable} from '../../lib/convertion'
+import {generateRemTable} from '../../lib/conversion'
 import {DEFAULT_RANGE, DEFAULT_BASEFONT} from '../../constants'
 
 export default class TableRem extends Command {

@@ -1,5 +1,5 @@
 import {Command, flags} from '@oclif/command'
-import {pxToPt} from '../../lib/convertion'
+import {pxToPt} from '../../lib/conversion'
 import {DEFAULT_BASEFONT} from '../../constants'
 
 export default class ToPt extends Command {
@@ -21,7 +21,7 @@ export default class ToPt extends Command {
     const {args} = this.parse(ToPt)
 
     const pixel: number = args.pixel ? Number(args.pixel) : DEFAULT_BASEFONT
-    const convertion: number = pxToPt(pixel)
-    this.log(`${convertion}pt`)
+    const conversion: number = pxToPt(pixel)
+    this.log(`${conversion}pt`)
   }
 }

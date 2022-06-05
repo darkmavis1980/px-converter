@@ -1,10 +1,83 @@
 # Changelog
 
-## [Unreleased](https://github.com/darkmavis1980/px-converter/compare/v0.2.23...HEAD)
+## [Unreleased](https://github.com/darkmavis1980/px-converter/compare/v0.3.8...HEAD)
+
+### Commits
+
+- Updated dependencies [`36ea3f9`](https://github.com/darkmavis1980/px-converter/commit/36ea3f95a6db85dcea9a858c230066bdaca79b17)
+- Added hex to rgb conversion [`43dcb86`](https://github.com/darkmavis1980/px-converter/commit/43dcb869aaf1e902214d4030876e2d0d109396f2)
+
+## [v0.3.8](https://github.com/darkmavis1980/px-converter/compare/v0.3.7...v0.3.8) - 2022-05-27
+
+### Merged
+
+- Bugfix/update dependencies [`#15`](https://github.com/darkmavis1980/px-converter/pull/15)
+
+### Commits
+
+- Reverting oclif/test [`977f9d3`](https://github.com/darkmavis1980/px-converter/commit/977f9d37b1221d23a7936e8a109b589725443b51)
+- Updated actions [`c8a5882`](https://github.com/darkmavis1980/px-converter/commit/c8a58820aa55af05e058de7d85dc66af9786ba4f)
+- Updated dependencies on actions [`5844e9f`](https://github.com/darkmavis1980/px-converter/commit/5844e9fc3b41da85e687bf5f481e478301116583)
+- Updated actions [`1433277`](https://github.com/darkmavis1980/px-converter/commit/1433277c2706ef1bb134873312bd76520d386f49)
+- Trying matrix [`dbd59d4`](https://github.com/darkmavis1980/px-converter/commit/dbd59d45a90edd99eb385588b36d66612eb9c6e8)
+- Another try [`1a19b4f`](https://github.com/darkmavis1980/px-converter/commit/1a19b4fc4c982220463e6216460493e3afa14061)
+- Updated node version [`cc39bf0`](https://github.com/darkmavis1980/px-converter/commit/cc39bf05c5882028dfa3fcb0db99a4e06ca94c1d)
+
+## [v0.3.7](https://github.com/darkmavis1980/px-converter/compare/v0.3.6...v0.3.7) - 2022-05-27
+
+### Merged
+
+- Bugfix/update dependencies may 2022 [`#14`](https://github.com/darkmavis1980/px-converter/pull/14)
+
+### Commits
+
+- Updated dependencies [`6871cfe`](https://github.com/darkmavis1980/px-converter/commit/6871cfe7896984a01d456bdb8c196085bf5cdf22)
+
+## [v0.3.6](https://github.com/darkmavis1980/px-converter/compare/v0.3.5...v0.3.6) - 2022-05-01
+
+### Commits
+
+- Updated dependencies [`46c01fa`](https://github.com/darkmavis1980/px-converter/commit/46c01fa9dff4142014e40ce9b93221cd208801d7)
+
+## [v0.3.5](https://github.com/darkmavis1980/px-converter/compare/v0.3.4...v0.3.5) - 2022-04-18
+
+### Merged
+
+- Bugfix/fix some audit issues [`#13`](https://github.com/darkmavis1980/px-converter/pull/13)
+
+### Commits
+
+- Updated workflows [`b73d027`](https://github.com/darkmavis1980/px-converter/commit/b73d027fe285a4ddbc1ff85f4d1256595d876de5)
+
+## [v0.3.4](https://github.com/darkmavis1980/px-converter/compare/v0.3.2...v0.3.4) - 2022-04-18
+
+### Merged
+
+- Updated dependencies [`#11`](https://github.com/darkmavis1980/px-converter/pull/11)
+
+## [v0.3.2](https://github.com/darkmavis1980/px-converter/compare/v0.3.1...v0.3.2) - 2021-04-03
+
+### Merged
+
+- Updated dependencies [`#10`](https://github.com/darkmavis1980/px-converter/pull/10)
+- Fixed issue with inquirer import [`#9`](https://github.com/darkmavis1980/px-converter/pull/9)
+
+### Commits
+
+- Fixed gitflow [`5b6a122`](https://github.com/darkmavis1980/px-converter/commit/5b6a122eb8327950c49c3302e32c4d0e49c65d09)
+
+## [v0.3.1](https://github.com/darkmavis1980/px-converter/compare/v0.3.0...v0.3.1) - 2021-03-11
+
+## [v0.3.0](https://github.com/darkmavis1980/px-converter/compare/v0.2.23...v0.3.0) - 2021-03-11
+
+### Merged
+
+- Feature/add potential energy calculation [`#8`](https://github.com/darkmavis1980/px-converter/pull/8)
 
 ### Commits
 
 - Added potential energy calculator [`2607cfa`](https://github.com/darkmavis1980/px-converter/commit/2607cfaa1dcf01430530246be0bc379147bb7d3f)
+- Updated readme [`8fed312`](https://github.com/darkmavis1980/px-converter/commit/8fed31217aa5453df25d7e06d1851dfb4685dd57)
 - Added workflow for PR [`c1b9d4a`](https://github.com/darkmavis1980/px-converter/commit/c1b9d4a6e5939a37e0e92dbba722b7431019bc1f)
 
 ## [v0.2.23](https://github.com/darkmavis1980/px-converter/compare/v0.2.22...v0.2.23) - 2021-01-25
