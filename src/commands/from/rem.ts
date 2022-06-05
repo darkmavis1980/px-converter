@@ -1,5 +1,5 @@
 import {Command, flags} from '@oclif/command'
-import {remToPx} from '../../lib/convertion'
+import {remToPx} from '../../lib/conversion'
 import {DEFAULT_BASEFONT} from '../../constants'
 
 export default class ToRem extends Command {
@@ -23,7 +23,7 @@ export default class ToRem extends Command {
 
     const rem: number = args.rem ? Number(args.rem) : DEFAULT_BASEFONT
     const base: number = flags.base ? Number(flags.base) : DEFAULT_BASEFONT
-    const convertion: number = remToPx(rem, base)
-    this.log(`${convertion}px`)
+    const conversion: number = remToPx(rem, base)
+    this.log(`${conversion}px`)
   }
 }

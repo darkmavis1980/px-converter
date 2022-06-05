@@ -6,10 +6,11 @@ import {
   remToPx,
   generateRemTable,
   generatePtTable,
-} from '../../src/lib/convertion'
+  hexToRgb,
+} from '../../src/lib/conversion'
 import {TTable} from '../../src/lib/interfaces/types'
 
-describe('Convertion Library', () => {
+describe('conversion Library', () => {
   describe('Function pxToPt', () => {
     it('should return the pt value for the given px value', () => {
       expect(pxToPt(16)).to.equal(12)
@@ -66,6 +67,24 @@ describe('Convertion Library', () => {
       expect(resultWithRange).to.be.an('array')
       expect(resultWithRange[0].px).not.to.be.undefined
       expect(resultWithRange.length).to.equal(9)
+    })
+  })
+
+  describe('Function hexToRgb', () => {
+    it('should return an array of conversion from hex to rgb', () => {
+      const resultWhite: number[] = hexToRgb('FFF')
+      expect(resultWhite).to.be.an('array')
+      expect(resultWhite[0]).to.equal(255)
+      expect(resultWhite[1]).to.equal(255)
+      expect(resultWhite[2]).to.equal(255)
+      const resultWhiteLong: number[] = hexToRgb('FFFFFF')
+      expect(resultWhiteLong).to.be.an('array')
+      expect(resultWhiteLong[0]).to.equal(255)
+      const resultBlack: number[] = hexToRgb('000000')
+      expect(resultBlack).to.be.an('array')
+      expect(resultBlack[0]).to.equal(0)
+      expect(resultBlack[1]).to.equal(0)
+      expect(resultBlack[2]).to.equal(0)
     })
   })
 })

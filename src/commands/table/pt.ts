@@ -1,6 +1,6 @@
 import {Command, flags} from '@oclif/command'
 import {cli} from 'cli-ux'
-import {generatePtTable} from '../../lib/convertion'
+import {generatePtTable} from '../../lib/conversion'
 import {DEFAULT_RANGE} from '../../constants'
 
 export default class TablePt extends Command {
