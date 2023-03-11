@@ -1,8 +1,6 @@
 # Changelog
 
-## [v0.6.0-next.0](https://github.com/darkmavis1980/px-converter/compare/v0.5.0-alpha.0...v0.6.0-next.0)
-
-## [v0.5.0-alpha.0](https://github.com/darkmavis1980/px-converter/compare/v0.4.2...v0.5.0-alpha.0) - 2023-03-11
+## [v0.5.0-next.0](https://github.com/darkmavis1980/px-converter/compare/v0.4.2...v0.5.0-next.0)
 
 ### Merged
 
@@ -14,6 +12,7 @@
 - Removed dependencies [`7f7c00e`](https://github.com/darkmavis1980/px-converter/commit/7f7c00ec7b4b08da19fd34b4bd578b40ff12c1fd)
 - Replaced most of the commands [`703fb69`](https://github.com/darkmavis1980/px-converter/commit/703fb69e8398d6c73c00d796bcfdd2f9dbe5f10a)
 - Created logic to print table [`fd1a208`](https://github.com/darkmavis1980/px-converter/commit/fd1a2084427a1d3ef07f6c32092c99ca4f09e064)
+- Reset tags [`182af39`](https://github.com/darkmavis1980/px-converter/commit/182af39cc36e2205652782ac9218295549345fd0)
 - Fixed npm configuration and scripts [`a18301a`](https://github.com/darkmavis1980/px-converter/commit/a18301a4c6d31e3f7f5d7958c5da163f61abf464)
 - Fixed issue with TSC [`0962c42`](https://github.com/darkmavis1980/px-converter/commit/0962c426ee396b6cee0bf6ff1791391e58a5f541)
 
