@@ -1,29 +1,19 @@
-import {Command, flags} from '@oclif/command'
 import {remToPx} from '../../lib/conversion'
 import {DEFAULT_BASEFONT} from '../../constants'
 
-export default class ToRem extends Command {
-  static description = 'Convert a given rem value to the corresponding pixel value'
-
-  static examples = [
-    `$ px-converter from:rem 2
-32px
-`,
-  ]
-
-  static flags = {
-    help: flags.help({char: 'h'}),
-    base: flags.integer({char: 'b', description: 'Base pixel', default: DEFAULT_BASEFONT}),
-  }
-
-  static args = [{name: 'rem', description: 'Rem to convert'}]
-
-  async run(): Promise<void> {
-    const {args, flags} = this.parse(ToRem)
-
-    const rem: number = args.rem ? Number(args.rem) : DEFAULT_BASEFONT
-    const base: number = flags.base ? Number(flags.base) : DEFAULT_BASEFONT
-    const conversion: number = remToPx(rem, base)
-    this.log(`${conversion}px`)
-  }
+interface Args {
+  rem: number;
 }
+
+interface Opts {
+  base: number;
+}
+
+export const FromRem = (args: Args, flags: Opts) => {
+  const rem = args.rem ?? DEFAULT_BASEFONT;
+  const base = flags.base ?? DEFAULT_BASEFONT;
+  const conversion: number = remToPx(rem, base);
+  console.log(`${conversion}px`);
+}
+
+export default FromRem;
