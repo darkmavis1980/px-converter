@@ -1,42 +1,35 @@
-// import {generateRemTable} from '../../lib/conversion'
-// import {DEFAULT_RANGE, DEFAULT_BASEFONT} from '../../constants'
+import {generateRemTable} from '../../lib/conversion';
+import {DEFAULT_RANGE, DEFAULT_BASEFONT} from '../../constants';
+import { printTable } from '../../lib/table';
 
-// export default class TableRem extends Command {
-//   static description = `Return a table of conversions between pixels and rems, if no BASEPIXEL value is passed, it will default to ${DEFAULT_BASEFONT} pixels`
+interface Args {
+  basepixel: number;
+}
 
-//   static examples = [
-//     `$ px-converter table:rem
-// Pixel     Rem
-// 10px      0.625rem
-// 11px      0.6875rem
-// 12px      0.75rem
-// ...
-// `,
-//   ]
+interface Opts {
+  range: string;
+  base: number;
+}
 
-//   static flags = {
-//     help: flags.help({char: 'h'}),
-//     base: flags.integer({char: 'b', description: 'Base pixel', default: DEFAULT_BASEFONT}),
-//     // flag with a value (-r, --range=MIN,MAX)
-//     range: flags.string({char: 'r', description: 'Range of pixels', default: DEFAULT_RANGE.toString()}),
-//   }
+export const TableRem = (_: null, flags: Opts) => {
+  const range: number[] = flags.range ? flags.range.split(',').map(i => Number(i)) : DEFAULT_RANGE;
+  const basepixel = flags.base ?? DEFAULT_BASEFONT;
 
-//   static args = [{name: 'basepixel', description: 'Base Pixel'}]
+  const headers = [
+    {
+      name: 'px',
+      label: 'Pixels',
+    },
+    {
+      name: 'rem',
+      label: 'Rem',
+    },
+  ];
 
-//   async run(): Promise<void> {
-//     const {flags} = this.parse(TableRem)
-//     const basepixel = flags.base || DEFAULT_BASEFONT
-//     const range: number[]|string[] = flags.range ? flags.range.split(',').map(i => Number(i)) : DEFAULT_RANGE
+  const table = generateRemTable(range, basepixel);
 
-//     cli.table(generateRemTable(range, basepixel), {
-//       px: {
-//         header: 'Pixel',
-//         minWidth: 10,
-//       },
-//       rem: {
-//         header: 'Rem',
-//         minWidth: 10,
-//       },
-//     })
-//   }
-// }
+  printTable(table, { headers });
+  
+};
+
+export default TableRem;

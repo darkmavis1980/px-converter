@@ -1,38 +1,29 @@
-// import {generatePtTable} from '../../lib/conversion'
-// import {DEFAULT_RANGE} from '../../constants'
 
-// export default class TablePt extends Command {
-//   static description = 'Return a table of conversions between pixels and points'
+import { generatePtTable } from '../../lib/conversion';
+import { DEFAULT_RANGE } from '../../constants';
+import { printTable } from '../../lib/table';
 
-//   static examples = [
-//     `$ px-converter table:pt
-// Pixel     Point
-// 10px      7.5pt
-// 11px      8.25pt
-// 12px      9pt
-// ...
-// `,
-//   ]
+interface Opts {
+  range: string;
+}
 
-//   static flags = {
-//     help: flags.help({char: 'h'}),
-//     // flag with a value (-r, --range=MIN,MAX)
-//     range: flags.string({char: 'r', description: 'Range of pixels', default: DEFAULT_RANGE.toString()}),
-//   }
+export const TablePt = (_: null, flags: Opts) => {
+  const range: number[] = flags.range ? flags.range.split(',').map(i => Number(i)) : DEFAULT_RANGE;
 
-//   async run(): Promise<void> {
-//     const {flags} = this.parse(TablePt)
-//     const range: number[]|string[] = flags.range ? flags.range.split(',').map(i => Number(i)) : DEFAULT_RANGE
+  const table = generatePtTable(range);
 
-//     cli.table(generatePtTable(range), {
-//       px: {
-//         header: 'Pixel',
-//         minWidth: 10,
-//       },
-//       rem: {
-//         header: 'Point',
-//         minWidth: 10,
-//       },
-//     })
-//   }
-// }
+  const headers = [
+    {
+      name: 'px',
+      label: 'Pixels',
+    },
+    {
+      name: 'pt',
+      label: 'Points',
+    },
+  ];
+
+  printTable(table, { headers });
+};
+
+export default TablePt;

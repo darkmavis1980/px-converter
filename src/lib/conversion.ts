@@ -38,7 +38,7 @@ export function generatePtTable(range: number[] = DEFAULT_RANGE): TTable {
 
   for (let i: number = range[0]; i <= range[1]; i++) {
     const rem: number = pxToPt(i)
-    table.push({px: `${i}px`, rem: `${rem}pt`})
+    table.push({px: `${i}px`, pt: `${rem}pt`})
   }
 
   return table

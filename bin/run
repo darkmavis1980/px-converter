@@ -1,12 +1,16 @@
 #!/usr/bin/env node
 const { Command } = require('commander');
 const { version } = require('../package.json');
-const { FromPt } = require('../lib/commands/from/pt');
-const { ToPt } = require('../lib/commands/to/pt');
-const { FromRem } = require('../lib/commands/from/rem');
-const { ToRem } = require('../lib/commands/to/rem');
-const { ToRGB } = require('../lib/commands/to/rgb');
-const { ToJoules } = require('../lib/commands/joules');
+const {
+  FromPt,
+  ToPt,
+  FromRem,
+  ToRem,
+  ToRGB,
+  ToJoules,
+  TablePt,
+  TableRem,
+} = require('../lib');
 const { DEFAULT_BASEFONT } = require('../lib/constants');
 
 const program = new Command();
@@ -51,5 +55,18 @@ program
   .command('joules')
   .description('Take mass and height as input and returns the potential energy in Joules')
   .action(ToJoules);
+
+program
+  .command('table:pt')
+  .description('Return a table of conversions between pixels and points')
+  .option('-r, --range', '[default: 10,42] Range of pixels')
+  .action(TablePt);
+
+program
+  .command('table:rem')
+  .description('Return a table of conversions between pixels and rems, if no BASEPIXEL value is passed, it will default to 16 pixels')
+  .option('-b, --base', 'Base pixel', DEFAULT_BASEFONT)
+  .option('-r, --range', '[default: 10,42] Range of pixels')
+  .action(TableRem);
 
 program.parse(process.argv);
