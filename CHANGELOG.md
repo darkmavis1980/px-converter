@@ -1,11 +1,48 @@
 # Changelog
 
-## [Unreleased](https://github.com/darkmavis1980/px-converter/compare/v0.3.8...HEAD)
+## [v0.5.0-alpha.0](https://github.com/darkmavis1980/px-converter/compare/v0.4.2...v0.5.0-alpha.0)
+
+### Merged
+
+- Bugfix/updated dependencies [`#18`](https://github.com/darkmavis1980/px-converter/pull/18)
+
+### Commits
+
+- Updated dependencies [`1870210`](https://github.com/darkmavis1980/px-converter/commit/1870210de7e2ad8e024c085ce52105d08454b122)
+- Removed dependencies [`7f7c00e`](https://github.com/darkmavis1980/px-converter/commit/7f7c00ec7b4b08da19fd34b4bd578b40ff12c1fd)
+- Replaced most of the commands [`703fb69`](https://github.com/darkmavis1980/px-converter/commit/703fb69e8398d6c73c00d796bcfdd2f9dbe5f10a)
+- Created logic to print table [`fd1a208`](https://github.com/darkmavis1980/px-converter/commit/fd1a2084427a1d3ef07f6c32092c99ca4f09e064)
+- Fixed npm configuration and scripts [`a18301a`](https://github.com/darkmavis1980/px-converter/commit/a18301a4c6d31e3f7f5d7958c5da163f61abf464)
+- Fixed issue with TSC [`0962c42`](https://github.com/darkmavis1980/px-converter/commit/0962c426ee396b6cee0bf6ff1791391e58a5f541)
+
+## [v0.4.2](https://github.com/darkmavis1980/px-converter/compare/v0.4.1...v0.4.2) - 2022-10-02
+
+### Merged
+
+- Updated node matrix for CI/CD [`#17`](https://github.com/darkmavis1980/px-converter/pull/17)
+
+### Commits
+
+- Updated dependencies [`e4f98fc`](https://github.com/darkmavis1980/px-converter/commit/e4f98fc1f5c59126cbe580b5e3ae47bf74250976)
+- Updated dependencies [`5618fee`](https://github.com/darkmavis1980/px-converter/commit/5618fee95175640023ab1501eaa79b542ac40111)
+
+## [v0.4.1](https://github.com/darkmavis1980/px-converter/compare/v0.4.0...v0.4.1) - 2022-06-05
+
+### Merged
+
+- Feature/hex to rgb conversion [`#16`](https://github.com/darkmavis1980/px-converter/pull/16)
+
+### Commits
+
+- Updated node matrix for CI/CD [`c5bc0c8`](https://github.com/darkmavis1980/px-converter/commit/c5bc0c881464abbe016a789197416a9e042a2313)
+
+## [v0.4.0](https://github.com/darkmavis1980/px-converter/compare/v0.3.8...v0.4.0) - 2022-06-05
 
 ### Commits
 
 - Updated dependencies [`36ea3f9`](https://github.com/darkmavis1980/px-converter/commit/36ea3f95a6db85dcea9a858c230066bdaca79b17)
 - Added hex to rgb conversion [`43dcb86`](https://github.com/darkmavis1980/px-converter/commit/43dcb869aaf1e902214d4030876e2d0d109396f2)
+- Updated changelog [`6c88edc`](https://github.com/darkmavis1980/px-converter/commit/6c88edcc20734261645d49f5bb4f9d0ee5b0e6e0)
 
 ## [v0.3.8](https://github.com/darkmavis1980/px-converter/compare/v0.3.7...v0.3.8) - 2022-05-27
 
