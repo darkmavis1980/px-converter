@@ -1,27 +1,14 @@
-import {Command, flags} from '@oclif/command'
 import {pxToPt} from '../../lib/conversion'
 import {DEFAULT_BASEFONT} from '../../constants'
 
-export default class ToPt extends Command {
-  static description = 'Convert a given pixel value to the corresponding point value'
-
-  static examples = [
-    `$ px-converter to:pt 16
-12pt
-`,
-  ]
-
-  static flags = {
-    help: flags.help({char: 'h'}),
-  }
-
-  static args = [{name: 'pixel', description: 'Pixel to convert'}]
-
-  async run(): Promise<void> {
-    const {args} = this.parse(ToPt)
-
-    const pixel: number = args.pixel ? Number(args.pixel) : DEFAULT_BASEFONT
-    const conversion: number = pxToPt(pixel)
-    this.log(`${conversion}pt`)
-  }
+interface Args {
+  pixel: number;
 }
+
+export const ToPt = (args: Args) => {
+  const pixel = args.pixel ?? DEFAULT_BASEFONT;
+  const conversion: number = pxToPt(pixel);
+  console.log(`${conversion}pt`);
+};
+
+export default ToPt;
