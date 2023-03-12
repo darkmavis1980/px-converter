@@ -1,6 +1,16 @@
 # Changelog
 
-## [v0.5.0](https://github.com/darkmavis1980/px-converter/compare/v0.5.0-next.1...v0.5.0)
+## [v0.5.1](https://github.com/darkmavis1980/px-converter/compare/v0.5.0...v0.5.1)
+
+### Merged
+
+- Feature/remove oclif [`#20`](https://github.com/darkmavis1980/px-converter/pull/20)
+
+### Commits
+
+- Adding missing dependency [`1ad584e`](https://github.com/darkmavis1980/px-converter/commit/1ad584e667c85c416d41411421b13b5a816f7f04)
+
+## [v0.5.0](https://github.com/darkmavis1980/px-converter/compare/v0.5.0-next.1...v0.5.0) - 2023-03-12
 
 ## [v0.5.0-next.1](https://github.com/darkmavis1980/px-converter/compare/v0.5.0-next.0...v0.5.0-next.1) - 2023-03-12
 

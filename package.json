@@ -1,12 +1,13 @@
 {
   "name": "px-converter",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "author": "Alessio Michelini",
   "bin": {
     "px-converter": "./bin/run"
   },
   "bugs": "https://github.com/darkmavis1980/px-converter/issues",
   "dependencies": {
+    "commander": "^10.0.0",
     "inquirer": "^8.2.5",
     "tslib": "^2.5.0"
   },
