@@ -2,10 +2,6 @@ import {generateRemTable} from '../../lib/conversion';
 import {DEFAULT_RANGE, DEFAULT_BASEFONT} from '../../constants';
 import { printTable } from '../../lib/table';
 
-interface Args {
-  basepixel: number;
-}
-
 interface Opts {
   range: string;
   base: number;

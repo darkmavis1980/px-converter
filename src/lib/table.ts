@@ -61,7 +61,7 @@ export const printHeaders = (headers: OptionsTableHeaders[]): void => {
 
 export const printDataLine = (data: DataTable, headers: OptionsTableHeaders[]): void => {
   data.forEach((row: Record<string, any>) => {
-    let line = `┃${headers.map(({name, maxPaddedWidth = 5}) => ` ${row[name].padEnd(maxPaddedWidth, ' ')}`).join(' | ')}┃`;
+    const line = `┃${headers.map(({name, maxPaddedWidth = 5}) => ` ${row[name].padEnd(maxPaddedWidth, ' ')}`).join(' | ')}┃`;
     console.info(line);
   });
 }
