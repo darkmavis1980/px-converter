@@ -1,6 +1,12 @@
 # Changelog
 
-## [v0.5.0-next.0](https://github.com/darkmavis1980/px-converter/compare/v0.4.2...v0.5.0-next.0)
+## [v0.5.0-next.1](https://github.com/darkmavis1980/px-converter/compare/v0.5.0-next.0...v0.5.0-next.1)
+
+### Commits
+
+- Removed useless tests [`b451e59`](https://github.com/darkmavis1980/px-converter/commit/b451e5921edbaa20c90612406dc01f6515e7555e)
+
+## [v0.5.0-next.0](https://github.com/darkmavis1980/px-converter/compare/v0.4.2...v0.5.0-next.0) - 2023-03-11
 
 ### Merged
 
