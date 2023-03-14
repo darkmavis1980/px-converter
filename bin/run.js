@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-const { Command } = require('commander');
-const { version } = require('../package.json');
-const {
+import { Command } from 'commander';
+import { readFile } from 'fs/promises';
+import {
   FromPt,
   ToPt,
   FromRem,
@@ -10,8 +10,14 @@ const {
   ToJoules,
   TablePt,
   TableRem,
-} = require('../lib');
-const { DEFAULT_BASEFONT } = require('../lib/constants');
+} from '../lib/index.js';
+import { DEFAULT_BASEFONT } from '../lib/constants.js';
+
+const { version } = JSON.parse(
+  await readFile(
+    new URL('../package.json', import.meta.url)
+  )
+);
 
 const program = new Command();
 

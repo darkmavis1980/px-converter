@@ -1,3 +1,3 @@
 @echo off
 
-node "%~dp0\run.mjs" %*
+node "%~dp0\run.js" %*

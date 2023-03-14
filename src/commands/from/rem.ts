@@ -1,5 +1,5 @@
-import {remToPx} from '../../lib/conversion'
-import {DEFAULT_BASEFONT} from '../../constants'
+import {remToPx} from '../../lib/conversion.js'
+import {DEFAULT_BASEFONT} from '../../constants.js'
 
 interface Args {
   rem: number;

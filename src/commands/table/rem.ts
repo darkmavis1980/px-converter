@@ -1,6 +1,6 @@
-import {generateRemTable} from '../../lib/conversion';
-import {DEFAULT_RANGE, DEFAULT_BASEFONT} from '../../constants';
-import { printTable } from '../../lib/table';
+import {generateRemTable} from '../../lib/conversion.js';
+import {DEFAULT_RANGE, DEFAULT_BASEFONT} from '../../constants.js';
+import { printTable } from '../../lib/table.js';
 
 interface Opts {
   range: string;
