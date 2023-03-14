@@ -1,6 +1,16 @@
 # Changelog
 
-## [v0.5.1](https://github.com/darkmavis1980/px-converter/compare/v0.5.0...v0.5.1)
+## [v0.6.0](https://github.com/darkmavis1980/px-converter/compare/v0.5.1...v0.6.0)
+
+### Merged
+
+- Bugfix/add missing dependency [`#21`](https://github.com/darkmavis1980/px-converter/pull/21)
+
+### Commits
+
+- Removed commonjs support, now only ES Modules are supported [`56f963b`](https://github.com/darkmavis1980/px-converter/commit/56f963b7159d5b57e7d098148440529b3b335e18)
+
+## [v0.5.1](https://github.com/darkmavis1980/px-converter/compare/v0.5.0...v0.5.1) - 2023-03-12
 
 ### Merged
 

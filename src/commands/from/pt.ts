@@ -1,5 +1,5 @@
-import {ptToPx} from '../../lib/conversion'
-import {DEFAULT_BASEFONT} from '../../constants'
+import {ptToPx} from '../../lib/conversion.js'
+import {DEFAULT_BASEFONT} from '../../constants.js'
 
 interface Args {
   point: number;

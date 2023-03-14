@@ -1,4 +1,4 @@
-import {hexToRgb} from '../../lib/conversion';
+import {hexToRgb} from '../../lib/conversion.js';
 
 interface Args {
   hex: string;

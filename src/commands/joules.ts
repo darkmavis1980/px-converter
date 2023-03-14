@@ -1,5 +1,5 @@
-import * as inquirer from 'inquirer';
-import {GRAVITY} from '../constants';
+import inquirer from 'inquirer';
+import {GRAVITY} from '../constants.js';
 
 export const ToJoules = async () => {
   const {mass, height} = await inquirer.prompt([

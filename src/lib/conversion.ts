@@ -3,8 +3,8 @@ import {
   DEFAULT_PRECISION,
   DEFAULT_RANGE,
   DEFAULT_PT_CONVERSION,
-} from '../constants'
-import {TTable} from './interfaces/types'
+} from '../constants.js'
+import {TTable} from './interfaces/types.js'
 
 export function pxToPt(pixel: number): number {
   return Math.round((pixel * DEFAULT_PT_CONVERSION) * DEFAULT_PRECISION) / DEFAULT_PRECISION

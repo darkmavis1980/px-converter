@@ -1,7 +1,7 @@
 
-import { generatePtTable } from '../../lib/conversion';
-import { DEFAULT_RANGE } from '../../constants';
-import { printTable } from '../../lib/table';
+import { generatePtTable } from '../../lib/conversion.js';
+import { DEFAULT_RANGE } from '../../constants.js';
+import { printTable } from '../../lib/table.js';
 
 interface Opts {
   range: string;
