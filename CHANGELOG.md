@@ -1,6 +1,16 @@
 # Changelog
 
-## [v0.5.1](https://github.com/darkmavis1980/px-converter/compare/v0.5.0...v0.5.1)
+## [v0.5.2](https://github.com/darkmavis1980/px-converter/compare/v0.5.1...v0.5.2)
+
+### Merged
+
+- Bugfix/add missing dependency [`#21`](https://github.com/darkmavis1980/px-converter/pull/21)
+
+### Commits
+
+- [bugfix] Update dependencies [`84da0c5`](https://github.com/darkmavis1980/px-converter/commit/84da0c57cd00081ffaad07f58be26637764f0799)
+
+## [v0.5.1](https://github.com/darkmavis1980/px-converter/compare/v0.5.0...v0.5.1) - 2023-03-12
 
 ### Merged
 
