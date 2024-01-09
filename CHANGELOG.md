@@ -1,6 +1,19 @@
 # Changelog
 
-## [v0.6.0](https://github.com/darkmavis1980/px-converter/compare/v0.5.3...v0.6.0)
+## [v0.7.0](https://github.com/darkmavis1980/px-converter/compare/v0.6.0...v0.7.0)
+
+### Merged
+
+- Feature/remove support node 14 [`#26`](https://github.com/darkmavis1980/px-converter/pull/26)
+
+### Commits
+
+- feat!: remove oclif dependencies [`08f8575`](https://github.com/darkmavis1980/px-converter/commit/08f8575dbf1e3430a8ac2006186babf92a4f2ba5)
+- feat!: update workflows to use node 18 and 20 [`1f4cafe`](https://github.com/darkmavis1980/px-converter/commit/1f4cafe3e5ccaaa0c698c6fc4acd878482cafc59)
+- feat!: set engine to support node 18 and above [`bf829b9`](https://github.com/darkmavis1980/px-converter/commit/bf829b99c9a1baf4f86ee840fb58855ba85e6238)
+- feat: set TS to target es2021 instead of es2019 [`a65fd8d`](https://github.com/darkmavis1980/px-converter/commit/a65fd8de4d49b5ac905fd4da4054256e167960eb)
+
+## [v0.6.0](https://github.com/darkmavis1980/px-converter/compare/v0.5.3...v0.6.0) - 2023-08-27
 
 ### Commits
 
