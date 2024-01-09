@@ -1,6 +1,22 @@
 # Changelog
 
-## [v0.5.2](https://github.com/darkmavis1980/px-converter/compare/v0.5.1...v0.5.2)
+## [v0.6.0](https://github.com/darkmavis1980/px-converter/compare/v0.5.3...v0.6.0)
+
+### Commits
+
+- feat: remove support for node 14 [`275ddd3`](https://github.com/darkmavis1980/px-converter/commit/275ddd3ba9b39f5d57c033f5c05c72bb12517c5c)
+
+## [v0.5.3](https://github.com/darkmavis1980/px-converter/compare/v0.5.2...v0.5.3) - 2023-08-27
+
+### Merged
+
+- Bugfix/fix audit issue [`#24`](https://github.com/darkmavis1980/px-converter/pull/24)
+
+### Commits
+
+- chore: update dependencies [`a71befd`](https://github.com/darkmavis1980/px-converter/commit/a71befde57d3b1c243d2b5814e3ccf0d5edf60bb)
+
+## [v0.5.2](https://github.com/darkmavis1980/px-converter/compare/v0.5.1...v0.5.2) - 2023-06-27
 
 ### Merged
 
