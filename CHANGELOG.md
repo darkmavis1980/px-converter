@@ -1,6 +1,12 @@
 # Changelog
 
-## [v0.7.1](https://github.com/darkmavis1980/px-converter/compare/v0.7.0...v0.7.1)
+## [v0.7.2](https://github.com/darkmavis1980/px-converter/compare/v0.7.1...v0.7.2)
+
+### Commits
+
+- fix: update github actions [`2e681f3`](https://github.com/darkmavis1980/px-converter/commit/2e681f30762464c533d0b4b834a8690135b83fd0)
+
+## [v0.7.1](https://github.com/darkmavis1980/px-converter/compare/v0.7.0...v0.7.1) - 2024-11-24
 
 ### Merged
 
