@@ -1,6 +1,16 @@
 # Changelog
 
-## [v0.7.0](https://github.com/darkmavis1980/px-converter/compare/v0.6.0...v0.7.0)
+## [v0.7.1](https://github.com/darkmavis1980/px-converter/compare/v0.7.0...v0.7.1)
+
+### Merged
+
+- Feature/remove oclif dependencies [`#27`](https://github.com/darkmavis1980/px-converter/pull/27)
+
+### Commits
+
+- fix: update dependencies and fix vulnerabilities [`f74d54e`](https://github.com/darkmavis1980/px-converter/commit/f74d54e755d475194ffcd1b356bb6bf91a8dc343)
+
+## [v0.7.0](https://github.com/darkmavis1980/px-converter/compare/v0.6.0...v0.7.0) - 2024-01-09
 
 ### Merged
 
