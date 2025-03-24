@@ -1,6 +1,25 @@
 # Changelog
 
-## [v0.7.2](https://github.com/darkmavis1980/px-converter/compare/v0.7.1...v0.7.2)
+## [v0.8.0](https://github.com/darkmavis1980/px-converter/compare/v0.7.2...v0.8.0)
+
+### Merged
+
+- fix: update dependencies and fix vulnerabilities [`#28`](https://github.com/darkmavis1980/px-converter/pull/28)
+
+### Commits
+
+- feat!: upgrade dependencies and replace eslint with latest version [`cece4ef`](https://github.com/darkmavis1980/px-converter/commit/cece4efdc04885caf971bebfaa3064008bcf08a6)
+- feat: upgraded various packages [`d799d7f`](https://github.com/darkmavis1980/px-converter/commit/d799d7f24e2b45a1246127cc18f01aaa41f22569)
+- chore: update dependency [`74946ec`](https://github.com/darkmavis1980/px-converter/commit/74946ec50a8e3fa4f065335b75dfb7f3db8ec89d)
+- fix: linting [`7c830e0`](https://github.com/darkmavis1980/px-converter/commit/7c830e098725392649d4aea1cd19e0f121ac773b)
+- feat!: convert eslint configuration [`85061b6`](https://github.com/darkmavis1980/px-converter/commit/85061b6fe58a1f9db1a622286d8f8fd8dd108dd8)
+- fix: tests linting [`2e2dba9`](https://github.com/darkmavis1980/px-converter/commit/2e2dba9c1196836ad99e450427eae06a13dc996d)
+- feat: add prettier configuration [`ec46147`](https://github.com/darkmavis1980/px-converter/commit/ec4614777caf6a3462770039c78fe75c7e8a3d69)
+- feat: add prettier check to workflow [`9de4a6e`](https://github.com/darkmavis1980/px-converter/commit/9de4a6ef236a9e0ec6d216002e7d26ff0293b7da)
+- feat: add prettier npm scripts [`ee87914`](https://github.com/darkmavis1980/px-converter/commit/ee87914200aa58313837399d86a22a9c5d3c9bd8)
+- fix: ts configuration [`6eddbca`](https://github.com/darkmavis1980/px-converter/commit/6eddbca26c33287936b86bee227b555de65dc949)
+
+## [v0.7.2](https://github.com/darkmavis1980/px-converter/compare/v0.7.1...v0.7.2) - 2024-11-24
 
 ### Commits
 
