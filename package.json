@@ -52,7 +52,9 @@
     "test:watch": "jest --verbose --watch",
     "changelog": "auto-changelog",
     "version": "auto-changelog -p && git add CHANGELOG.md",
-    "eslint": "npx eslint . --ext .ts"
+    "eslint": "npx eslint . --ext .ts",
+    "prettier:check": "npx prettier ./src --check",
+    "prettier:write": "npx prettier ./src --write"
   },
   "types": "lib/index.d.ts",
   "auto-changelog": {
