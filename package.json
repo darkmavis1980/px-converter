@@ -16,7 +16,7 @@
     "@types/inquirer": "^8.2.10",
     "@types/jest": "^29.5.14",
     "@types/node": "^20.17.27",
-    "@typescript-eslint/eslint-plugin": "^8.27.0",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
     "auto-changelog": "^2.5.0",
     "babel-jest": "^29.7.0",
     "global": "^4.4.0",
