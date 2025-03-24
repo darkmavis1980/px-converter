@@ -1,5 +1,5 @@
-import {generateRemTable} from '../../lib/conversion';
-import {DEFAULT_RANGE, DEFAULT_BASEFONT} from '../../constants';
+import { generateRemTable } from '../../lib/conversion';
+import { DEFAULT_RANGE, DEFAULT_BASEFONT } from '../../constants';
 import { printTable } from '../../lib/table';
 
 interface Opts {
@@ -25,7 +25,6 @@ export const TableRem = (_: null, flags: Opts) => {
   const table = generateRemTable(range, basepixel);
 
   printTable(table, { headers });
-  
 };
 
 export default TableRem;

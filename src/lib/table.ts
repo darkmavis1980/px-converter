@@ -23,48 +23,48 @@ export const getDataKeys = (data: DataTable) => {
     name: key,
     label: key,
   }));
-}
+};
 
 export const findMaxWidth = (data: DataTable, headers: OptionsTableHeaders[]): OptionsTableHeaders[] => {
-  return headers.map((header) => {
+  return headers.map(header => {
     const { name } = header;
     let maxLength = 0;
     const dataLength = data.length ?? 0;
     for (let i = 0; i < dataLength; i++) {
-      if(data[i][name].length > maxLength) {
+      if (data[i][name].length > maxLength) {
         maxLength = data[i][name].length;
       }
     }
     header.maxWidth = maxLength;
-    header.maxPaddedWidth = maxLength + (PADDING * 2);
+    header.maxPaddedWidth = maxLength + PADDING * 2;
     return header;
   });
-}
+};
 
 export const calculateTableWidth = (headers: OptionsTableHeaders[]): number => {
   let tableWidth = 2;
   // add separators
-  tableWidth += (headers.length * 2) - 1;
+  tableWidth += headers.length * 2 - 1;
   // add width for each header
-  headers.forEach(({maxWidth = 1}) => {
-    tableWidth += (PADDING * 2) + maxWidth;
+  headers.forEach(({ maxWidth = 1 }) => {
+    tableWidth += PADDING * 2 + maxWidth;
   });
 
   return tableWidth;
-}
+};
 
 export const printHeaders = (headers: OptionsTableHeaders[]): void => {
-  const headersList = headers.map(({label, maxPaddedWidth = 5}) => ` ${label.padEnd(maxPaddedWidth, ' ')}`);
+  const headersList = headers.map(({ label, maxPaddedWidth = 5 }) => ` ${label.padEnd(maxPaddedWidth, ' ')}`);
   const line = `┃${headersList.join(' | ')}┃`;
   console.info(line);
-}
+};
 
 export const printDataLine = (data: DataTable, headers: OptionsTableHeaders[]): void => {
   data.forEach((row: Record<string, any>) => {
-    const line = `┃${headers.map(({name, maxPaddedWidth = 5}) => ` ${row[name].padEnd(maxPaddedWidth, ' ')}`).join(' | ')}┃`;
+    const line = `┃${headers.map(({ name, maxPaddedWidth = 5 }) => ` ${row[name].padEnd(maxPaddedWidth, ' ')}`).join(' | ')}┃`;
     console.info(line);
   });
-}
+};
 
 export const printTable = (data: DataTable, options: OptionsTable = {}) => {
   let headers = options.headers ?? getDataKeys(data);
@@ -78,4 +78,4 @@ export const printTable = (data: DataTable, options: OptionsTable = {}) => {
   printDataLine(data, headers);
   console.info(`┖${'─'.repeat(tableWidth)}┚`);
   return headers;
-}
+};

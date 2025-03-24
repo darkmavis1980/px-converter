@@ -1,5 +1,5 @@
-import {pxToPt} from '../../lib/conversion'
-import {DEFAULT_BASEFONT} from '../../constants'
+import { pxToPt } from '../../lib/conversion';
+import { DEFAULT_BASEFONT } from '../../constants';
 
 interface Args {
   pixel: number;

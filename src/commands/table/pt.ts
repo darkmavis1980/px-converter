@@ -1,4 +1,3 @@
-
 import { generatePtTable } from '../../lib/conversion';
 import { DEFAULT_RANGE } from '../../constants';
 import { printTable } from '../../lib/table';
