@@ -1,7 +1,7 @@
-#!/usr/bin/env node
-const { Command } = require('commander');
-const { version } = require('../package.json');
-const {
+#!/usr/bin/env npx tsx
+import { Command } from 'commander';
+import { version } from '../package.json';
+import {
   FromPt,
   ToPt,
   FromRem,
@@ -10,8 +10,8 @@ const {
   ToJoules,
   TablePt,
   TableRem,
-} = require('../lib');
-const { DEFAULT_BASEFONT } = require('../lib/constants');
+} from '../lib';
+import { DEFAULT_BASEFONT } from '../lib/constants';
 
 const program = new Command();
 

@@ -1,6 +1,17 @@
 # Changelog
 
-## [v0.8.0](https://github.com/darkmavis1980/px-converter/compare/v0.7.2...v0.8.0)
+## [v0.8.1](https://github.com/darkmavis1980/px-converter/compare/v0.8.0...v0.8.1)
+
+### Merged
+
+- Feature/upgrade linter [`#29`](https://github.com/darkmavis1980/px-converter/pull/29)
+
+### Commits
+
+- chore: update @types/node [`9d48ede`](https://github.com/darkmavis1980/px-converter/commit/9d48ede9fce13f0859a2a503bd597dd0329e7313)
+- fix: replace runtime for bin [`ea84b94`](https://github.com/darkmavis1980/px-converter/commit/ea84b9470a17bfc1b3df3ea18a82b40e2bd4dec2)
+
+## [v0.8.0](https://github.com/darkmavis1980/px-converter/compare/v0.7.2...v0.8.0) - 2025-03-24
 
 ### Merged
 

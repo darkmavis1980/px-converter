@@ -9,3 +9,4 @@ node_modules
 .npmrc
 .DS_Store
 .vscode
+*.tsbuildinfo
