@@ -1,6 +1,6 @@
 {
   "name": "px-converter",
-  "version": "0.8.1",
+  "version": "1.0.0",
   "type": "module",
   "author": "Alessio Michelini",
   "bin": {

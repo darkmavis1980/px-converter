@@ -1,6 +1,25 @@
 # Changelog
 
-## [v0.8.1](https://github.com/darkmavis1980/px-converter/compare/v0.8.0...v0.8.1)
+## [v1.0.0](https://github.com/darkmavis1980/px-converter/compare/v0.8.1...v1.0.0)
+
+### Merged
+
+- Bugfix/replace runtime [`#30`](https://github.com/darkmavis1980/px-converter/pull/30)
+
+### Commits
+
+- refactor: replace Jest with Vitest for testing framework [`b7aefcf`](https://github.com/darkmavis1980/px-converter/commit/b7aefcfebef382498d08eee1bbb54581f8ce7644)
+- chore: update dependencies and devDependencies in package.json [`6766174`](https://github.com/darkmavis1980/px-converter/commit/67661748fde0cebe0eba35fc07381b1c6b68b85a)
+- refactor: update ESLint configuration for TypeScript support and improve plugin integration [`5ff97d6`](https://github.com/darkmavis1980/px-converter/commit/5ff97d672b8b47a1ba8069a98aa35cd3eaf8808f)
+- refactor: simplify function signatures by removing unnecessary interfaces and using direct parameters [`e0f7f10`](https://github.com/darkmavis1980/px-converter/commit/e0f7f109c57c69fcea5a8aaeea7bac7720a71c82)
+- refactor: update import statements to use .js extensions for compatibility with Node.js 14+ [`d5a2112`](https://github.com/darkmavis1980/px-converter/commit/d5a21120487fb75e4bd8e44458e26bae0196730a)
+- refactor: clean up GitHub Actions workflows by removing comments and standardizing formatting [`4816c98`](https://github.com/darkmavis1980/px-converter/commit/4816c98848674ab04fb8ca3c9ddfade99379cc54)
+- refactor: remove unused dependencies and clean up package.json [`e1cfa55`](https://github.com/darkmavis1980/px-converter/commit/e1cfa551a8c3ca13618c2666bfa683fdd0c06e54)
+- refactor: remove commented-out code and clean up ESLint configuration [`a6c0798`](https://github.com/darkmavis1980/px-converter/commit/a6c07983aacc21bbc9b7959e3c140b3310f0a88e)
+- refactor: migrate from Jest to Vitest and update ESLint configuration [`48ef079`](https://github.com/darkmavis1980/px-converter/commit/48ef07954ad59f3c17374e9e6d5001600bd6e043)
+- chore: update workflows to support Node.js 24 and upgrade action versions [`fe0f7f1`](https://github.com/darkmavis1980/px-converter/commit/fe0f7f152c796714dbcd1575e3e82e143c9b9e15)
+
+## [v0.8.1](https://github.com/darkmavis1980/px-converter/compare/v0.8.0...v0.8.1) - 2025-03-25
 
 ### Merged
 
