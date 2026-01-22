@@ -6,10 +6,22 @@ import eslintTs from 'typescript-eslint';
 
 const tsFiles = ['{src,test}/**/*.ts'];
 
+const vitestGlobals = {
+    describe: 'readonly',
+    it: 'readonly',
+    test: 'readonly',
+    expect: 'readonly',
+    vi: 'readonly',
+    beforeAll: 'readonly',
+    afterAll: 'readonly',
+    beforeEach: 'readonly',
+    afterEach: 'readonly',
+};
+
 const languageOptions = {
     globals: {
         ...globals.node,
-        ...globals.jest,
+        ...vitestGlobals,
     },
     ecmaVersion: 2023,
     sourceType: 'module',
