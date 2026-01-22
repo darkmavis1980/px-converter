@@ -2,8 +2,8 @@
   "compilerOptions": {
     "composite": true,
     "declaration": true,
-    "importHelpers": true,
-    "module": "commonjs",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "outDir": "lib",
     "rootDir": "src",
     "strict": true,
@@ -12,12 +12,7 @@
     "target": "es2022",
     "types": ["node"],
     "skipLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "lib/*": [
-        "src/lib/*"
-      ]
-    }
+    "verbatimModuleSyntax": true
   },
   "include": [
     "src/**/*"
