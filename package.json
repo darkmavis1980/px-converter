@@ -19,7 +19,6 @@
     "@typescript-eslint/parser": "^8.53.1",
     "auto-changelog": "^2.5.0",
     "eslint-plugin-import": "^2.32.0",
-    "global": "^4.4.0",
     "globals": "^17.0.0",
     "globby": "^16.1.0",
     "vitest": "^3.2.4",
@@ -35,9 +34,7 @@
   },
   "files": [
     "/bin",
-    "/lib",
-    "/npm-shrinkwrap.json",
-    "/oclif.manifest.json"
+    "/lib"
   ],
   "homepage": "https://github.com/darkmavis1980/px-converter",
   "keywords": [
