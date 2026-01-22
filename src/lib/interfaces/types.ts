@@ -4,4 +4,4 @@ export interface ITableRow {
   pt?: string;
 };
 
-export type TTable = Array<ITableRow>;
+export type TTable = ITableRow[];
