@@ -3,11 +3,11 @@ import { DEFAULT_RANGE } from '../../constants';
 import { printTable } from '../../lib/table';
 
 interface Opts {
-  range: string;
+  range?: string;
 }
 
-export const TablePt = (_: null, flags: Opts) => {
-  const range: number[] = flags.range ? flags.range.split(',').map(i => Number(i)) : DEFAULT_RANGE;
+export const TablePt = (options: Opts) => {
+  const range: number[] = options.range ? options.range.split(',').map(i => Number(i)) : DEFAULT_RANGE;
 
   const table = generatePtTable(range);
 
