@@ -1,4 +1,4 @@
-import { ptToPx } from '../../lib/conversion';
+import { ptToPx } from '../../lib/conversion.js';
 
 export const FromPt = (point: string) => {
   const conversion: number = ptToPx(Number(point));

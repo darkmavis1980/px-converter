@@ -1,4 +1,4 @@
-import { hexToRgb } from '../../lib/conversion';
+import { hexToRgb } from '../../lib/conversion.js';
 
 export const ToRGB = (hex: string) => {
   const conversion: number[] = hexToRgb(hex);
