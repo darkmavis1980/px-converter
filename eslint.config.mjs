@@ -25,7 +25,7 @@ const customTypescriptConfig = {
         ...languageOptions,
         parser: tsParser,
         parserOptions: {
-            project: './tsconfig.json',
+            project: './tsconfig.eslint.json',
         },
     },
     settings: {
@@ -55,9 +55,20 @@ const recommendedTypeScriptConfigs = [
     })),
 ];
 
+const commonJsConfig = {
+    files: ['**/*.js'],
+    languageOptions: {
+        sourceType: 'commonjs',
+        globals: {
+            ...globals.node,
+        },
+    },
+};
+
 export default [
     { ignores: ['docs/*', 'build/*', 'lib/*', 'dist/*'] }, // global ignores
     eslintJs.configs.recommended,
     ...recommendedTypeScriptConfigs,
     customTypescriptConfig,
+    commonJsConfig,
 ];
