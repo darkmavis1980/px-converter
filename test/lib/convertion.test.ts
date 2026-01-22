@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import {
   pxToPt,
   ptToPx,
@@ -6,8 +7,8 @@ import {
   generateRemTable,
   generatePtTable,
   hexToRgb,
-} from '../../src/lib/conversion';
-import { TTable } from '../../src/lib/interfaces/types';
+} from '../../src/lib/conversion.js';
+import type { TTable } from '../../src/lib/interfaces/types.js';
 
 describe('conversion Library', () => {
   describe('Function pxToPt', () => {
