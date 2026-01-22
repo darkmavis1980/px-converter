@@ -1,4 +1,4 @@
-export type ITableRow = {
+export interface ITableRow {
   px: string;
   rem?: string;
   pt?: string;
