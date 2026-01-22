@@ -1,6 +1,7 @@
 {
   "name": "px-converter",
   "version": "0.8.1",
+  "type": "module",
   "author": "Alessio Michelini",
   "bin": {
     "px-converter": "./bin/run"
@@ -42,6 +43,12 @@
   ],
   "license": "MIT",
   "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
   "repository": "darkmavis1980/px-converter",
   "scripts": {
     "posttest": "npm run eslint",
