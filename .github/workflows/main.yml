@@ -1,38 +1,28 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Merge to Main
 
-# Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ main ]
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches: [main]
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ 20, 22, 24 ]
+        node: [20, 22, 24]
 
-    name: Node ${{ matrix.node }} sample
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    name: Node ${{ matrix.node }}
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v6
 
-      # Runs a single command using the runners shell
-      - name: Run unit tests
+      - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node }}
-      - run: npm install
+          cache: 'npm'
+
+      - run: npm ci
       - run: npm test
       - run: npm run eslint
       - run: npm run prettier:check
