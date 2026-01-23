@@ -1,7 +1,7 @@
-export type ITableRow = {
+export interface ITableRow {
   px: string;
   rem?: string;
   pt?: string;
 };
 
-export type TTable = Array<ITableRow>;
+export type TTable = ITableRow[];

@@ -1,13 +1,7 @@
-import { ptToPx } from '../../lib/conversion';
-import { DEFAULT_BASEFONT } from '../../constants';
+import { ptToPx } from '../../lib/conversion.js';
 
-interface Args {
-  point: number;
-}
-
-export const FromPt = (args: Args) => {
-  const point = args.point ?? DEFAULT_BASEFONT;
-  const conversion: number = ptToPx(point);
+export const FromPt = (point: string) => {
+  const conversion: number = ptToPx(Number(point));
   console.log(`${conversion}px`);
 };
 

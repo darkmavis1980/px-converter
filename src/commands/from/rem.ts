@@ -1,18 +1,13 @@
-import { remToPx } from '../../lib/conversion';
-import { DEFAULT_BASEFONT } from '../../constants';
-
-interface Args {
-  rem: number;
-}
+import { remToPx } from '../../lib/conversion.js';
+import { DEFAULT_BASEFONT } from '../../constants.js';
 
 interface Opts {
-  base: number;
+  base?: number;
 }
 
-export const FromRem = (args: Args, flags: Opts) => {
-  const rem = args.rem ?? DEFAULT_BASEFONT;
-  const base = flags.base ?? DEFAULT_BASEFONT;
-  const conversion: number = remToPx(rem, base);
+export const FromRem = (rem: string, options: Opts) => {
+  const base = options.base ?? DEFAULT_BASEFONT;
+  const conversion: number = remToPx(Number(rem), base);
   console.log(`${conversion}px`);
 };
 

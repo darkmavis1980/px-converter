@@ -1,11 +1,7 @@
-import { hexToRgb } from '../../lib/conversion';
+import { hexToRgb } from '../../lib/conversion.js';
 
-interface Args {
-  hex: string;
-}
-
-export const ToRGB = (args: Args) => {
-  const conversion: number[] = hexToRgb(args.hex);
+export const ToRGB = (hex: string) => {
+  const conversion: number[] = hexToRgb(hex);
   console.log(`rgb(${conversion.join(',')})`);
 };
 

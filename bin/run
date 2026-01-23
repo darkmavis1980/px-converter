@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 import { Command } from 'commander';
-import { version } from '../package.json';
+import { createRequire } from 'module';
 import {
   FromPt,
   ToPt,
@@ -10,8 +10,11 @@ import {
   ToJoules,
   TablePt,
   TableRem,
-} from '../lib';
-import { DEFAULT_BASEFONT } from '../lib/constants';
+} from '../lib/index.js';
+import { DEFAULT_BASEFONT } from '../lib/constants.js';
+
+const require = createRequire(import.meta.url);
+const { version } = require('../package.json');
 
 const program = new Command();
 

@@ -1,15 +1,15 @@
-import { generateRemTable } from '../../lib/conversion';
-import { DEFAULT_RANGE, DEFAULT_BASEFONT } from '../../constants';
-import { printTable } from '../../lib/table';
+import { generateRemTable } from '../../lib/conversion.js';
+import { DEFAULT_RANGE, DEFAULT_BASEFONT } from '../../constants.js';
+import { printTable } from '../../lib/table.js';
 
 interface Opts {
-  range: string;
-  base: number;
+  range?: string;
+  base?: number;
 }
 
-export const TableRem = (_: null, flags: Opts) => {
-  const range: number[] = flags.range ? flags.range.split(',').map(i => Number(i)) : DEFAULT_RANGE;
-  const basepixel = flags.base ?? DEFAULT_BASEFONT;
+export const TableRem = (options: Opts) => {
+  const range: number[] = options.range ? options.range.split(',').map(i => Number(i)) : DEFAULT_RANGE;
+  const basepixel = options.base ?? DEFAULT_BASEFONT;
 
   const headers = [
     {
