@@ -1,6 +1,5 @@
 import importPlugin from 'eslint-plugin-import';
 import globals from 'globals';
-import tsParser from '@typescript-eslint/parser';
 import eslintJs from '@eslint/js';
 import eslintTs from 'typescript-eslint';
 
@@ -31,11 +30,10 @@ const customTypescriptConfig = {
     files: tsFiles,
     plugins: {
         import: importPlugin,
-        'import/parsers': tsParser,
     },
     languageOptions: {
         ...languageOptions,
-        parser: tsParser,
+        parser: eslintTs.parser,
         parserOptions: {
             project: './tsconfig.eslint.json',
         },
@@ -67,10 +65,10 @@ const recommendedTypeScriptConfigs = [
     })),
 ];
 
-const commonJsConfig = {
-    files: ['**/*.js'],
+const javascriptConfig = {
+    files: ['**/*.{js,mjs}'],
     languageOptions: {
-        sourceType: 'commonjs',
+        sourceType: 'module',
         globals: {
             ...globals.node,
         },
@@ -82,5 +80,5 @@ export default [
     eslintJs.configs.recommended,
     ...recommendedTypeScriptConfigs,
     customTypescriptConfig,
-    commonJsConfig,
+    javascriptConfig,
 ];
