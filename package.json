@@ -15,15 +15,11 @@
   "devDependencies": {
     "@eslint/js": "^9.23.0",
     "@types/node": "^24.19.2",
-    "@typescript-eslint/eslint-plugin": "^8.28.0",
-    "@typescript-eslint/parser": "^8.53.1",
     "auto-changelog": "^2.7.0",
+    "eslint": "^9.39.5",
     "eslint-plugin-import": "^2.32.0",
     "globals": "^17.14.0",
-    "globby": "^16.2.4",
     "prettier": "^3.10.1",
-    "ts-node": "^10.9.2",
-    "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.72.2",
     "vitest": "^5.1.0"
@@ -51,7 +47,7 @@
   "scripts": {
     "posttest": "npm run eslint",
     "build": "tsc -b",
-    "prepack": "rm -rf lib && npm run build",
+    "prepack": "rm -rf lib tsconfig.tsbuildinfo && npm run build",
     "test": "vitest run",
     "test:watch": "vitest",
     "changelog": "auto-changelog",
