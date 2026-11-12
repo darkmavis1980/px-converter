@@ -1,31 +1,22 @@
-import * as inquirer from 'inquirer';
+import inquirer from 'inquirer';
 import { GRAVITY } from '../constants.js';
 
+const validateNumber = (value: number | undefined): boolean | string =>
+  value !== undefined && !Number.isNaN(value) ? true : 'Please enter a valid number';
+
 export const ToJoules = async () => {
-  const { mass, height } = await inquirer.prompt([
+  const { mass, height } = await inquirer.prompt<{ mass: number; height: number }>([
     {
       name: 'mass',
       type: 'number',
       message: 'Specify the mass in Kg:',
-      validate: ({ mass }: { mass: number }): boolean | string => {
-        if (!Number.isNaN(Number(mass))) {
-          return 'Please enter a valid number';
-        }
-
-        return true;
-      },
+      validate: validateNumber,
     },
     {
       name: 'height',
       type: 'number',
       message: 'Specify the height from the ground in metres:',
-      validate: ({ height }: { height: number }): boolean | string => {
-        if (!Number.isNaN(Number(height))) {
-          return 'Please enter a valid number';
-        }
-
-        return true;
-      },
+      validate: validateNumber,
     },
   ]);
   const velocity = 2 * height * GRAVITY;
