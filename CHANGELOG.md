@@ -1,6 +1,22 @@
 # Changelog
 
-## [v1.0.0](https://github.com/darkmavis1980/px-converter/compare/v0.8.1...v1.0.0)
+## [v1.1.0](https://github.com/darkmavis1980/px-converter/compare/v1.0.0...v1.1.0)
+
+### Merged
+
+- Feature/support node 24 [`#31`](https://github.com/darkmavis1980/px-converter/pull/31)
+
+### Commits
+
+- chore: update dependencies and devDependencies to latest versions [`5bbca23`](https://github.com/darkmavis1980/px-converter/commit/5bbca23c494f010af739ac6ccc623dbab95475c2)
+- chore: update dependencies and improve prepack script [`7e1c375`](https://github.com/darkmavis1980/px-converter/commit/7e1c375dfadc9db45f66e153e2683e66e464a89d)
+- chore: update inquirer to version 14.3.0 and adjust node engine requirement to &gt;=24.15.0 [`e29c11f`](https://github.com/darkmavis1980/px-converter/commit/e29c11fb803dd9dfb4e7fb7ea6cb64e881144348)
+- refactor: simplify validation logic in ToJoules function [`10641f4`](https://github.com/darkmavis1980/px-converter/commit/10641f4e4697ac85164ba34e0ee8595b9f9eccac)
+- chore: update ESLint configuration to use TypeScript parser and adjust JavaScript source type [`e6f00a2`](https://github.com/darkmavis1980/px-converter/commit/e6f00a2c39f63aa0256881b7ec1541a42568e017)
+- chore: update Node.js versions and actions in workflow files for consistency [`f3a13d3`](https://github.com/darkmavis1980/px-converter/commit/f3a13d30d7c2a77b0fcdc2b8cd5dad5cbdf3960f)
+- chore: change shebang to use node instead of npx tsx [`8f51fb4`](https://github.com/darkmavis1980/px-converter/commit/8f51fb4e3501e90770ee32afe0079e8ca3ccca23)
+
+## [v1.0.0](https://github.com/darkmavis1980/px-converter/compare/v0.8.1...v1.0.0) - 2026-01-22
 
 ### Merged
 
